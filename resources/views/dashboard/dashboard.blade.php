@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('title', 'Latihan Soal CPNS')
+@section('title', 'Dashboard CPNS')
 
 @section ('container')
 
@@ -19,29 +19,60 @@
     <div class="content">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-12">
+
+                <div class="col-lg-3">
                     <div class="card">
                         <div class="card-body">
-                            <h2> Latihan Soal</h2>
-                            <div class="alert alert-primary" role="alert">
-                                Jangan khawatir dengan kesibukan Anda. Luangkan beberapa menit untuk mengerjakan soal!
+                            <img src="{{ asset('icon/sharp_book_black_18dp.png') }}">
+                            <div class="text-right">
+                                <h6 class="card-text" style="font-size: 30px; font-weight:bolder">100</h6>
+                                <p class="card-text">Materi</p>
                             </div>
-                            <form action="#">
-                                <div class="form-group col-md-4 p-1">
-                                    <select id="inputState" class="form-control">
-                                        <option selected>Semua Kategori</option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                    </select>
-                                </div>
-                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="{{ asset('icon/sharp_topic_black_18dp.png') }}">
+                            <div class="text-right">
+                                <h6 class="card-text" style="font-size: 30px; font-weight:bolder">250</h6>
+                                <p class="card-text">Pembahasan Soal</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="{{ asset('icon/sharp_create_black_18dp.png') }}">
+                            <div class="text-right">
+                                <h6 class="card-text" style="font-size: 30px; font-weight:bolder">30</h6>
+                                <p class="card-text">Latihan & Tryout</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="{{ asset('icon/sharp_sticky_note_2_black_18dp.png') }}">
+                            <div class="text-right">
+                                <h6 class="card-text" style="font-size: 30px; font-weight:bolder">4</h6>
+                                <p class="card-text">Catatan Kebutuhan</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
 
+            <div class="alert alert-danger" role="alert">
+                Ada Latihan & Tryout yang belum dikerjakan
+            </div>
 
 
             <div class="row">
@@ -106,9 +137,13 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-</div>
 
+            <!-- /.col-md-6 -->
+        </div>
+        <!-- /.row -->
+    </div><!-- /.container-fluid -->
+</div>
+<!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
 @endsection

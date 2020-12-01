@@ -20,5 +20,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/dashboard', 'HomeController@dashboard')->name('dashboard');
+Route::get('/tryout', 'HomeController@tryout')->name('tryout');
+Route::get('/tryout_detail', 'HomeController@tryout_detail')->name('tryout_detail');
 Route::get('/hasillatihan', 'HomeController@hasillatihan')->name('hasillatihan');
 Route::get('/latihansoal', 'HomeController@latihansoal')->name('latihansoal');
