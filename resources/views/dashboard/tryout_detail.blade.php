@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('title', 'Hasil Latihan CPNS')
+@section('title', 'Tryout CPNS')
 
 @section ('container')
 
@@ -22,38 +22,42 @@
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="card-body">
-                            <h2>Hasil Latihan</h2>
+                            <h2> Hasil Try Out</h2>
                             <table class="table table-striped">
                                 <thead>
                                     <tr>
-                                        <th scope="col">Np</th>
-                                        <th scope="col">Latihan</th>
+                                        <th scope="col">No</th>
+                                        <th scope="col">Tryout</th>
                                         <th scope="col">Tanggal Mengerjakan</th>
+                                        <th scope="col">Skor</th>
                                         <th scope="col">Skor</th>
                                         <th scope="col">Opsi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <th scope="row">1</th>
-                                        <td>TWK14</td>
+                                        <th>1</th>
+                                        <th>TWK-14</th>
                                         <td>26-11-2020</td>
                                         <td>80</td>
-                                        <td></td>
+                                        <td><button class="btn btn-success">Lulus</button></td>
+                                        <td><button class="btn btn-primary">Detail</button></td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">2</th>
-                                        <td>TWK14</td>
+                                        <th>2</th>
+                                        <th>TWK-12</th>
                                         <td>26-11-2020</td>
-                                        <td>80</td>
-                                        <td></td>
+                                        <td>40</td>
+                                        <td><button class="btn btn-danger">Tidak Lulus</button></td>
+                                        <td><button class="btn btn-primary">Detail</button></td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">3</th>
-                                        <td>TWK14</td>
+                                        <th>3</th>
+                                        <th>TIU-2</th>
                                         <td>26-11-2020</td>
                                         <td>80</td>
-                                        <td></td>
+                                        <td><button class="btn btn-success">Lulus</button></td>
+                                        <td><button class="btn btn-primary">Detail</button></td>
                                     </tr>
 
                                 </tbody>
@@ -66,6 +70,6 @@
     </div>
 </div>
 </div>
-<!-- /.content-wrapper -->
+
 
 @endsection
