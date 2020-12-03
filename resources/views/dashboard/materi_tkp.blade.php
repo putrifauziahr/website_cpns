@@ -39,7 +39,7 @@
                                     <tr>
                                         <th scope="row">{{$no}}</th>
                                         <td>{{$m->judul}}</td>
-                                        <td><a class="btn btn-outline-primary">DETAIL</a></td>
+                                        <td><a href="/detail_materitkp/{{$m->id}}" class="btn btn-outline-primary">DETAIL</a></td>
                                     </tr>
                                 </tbody>
                                 @endforeach
