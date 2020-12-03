@@ -7,8 +7,12 @@
 
   <title>@yield('title')</title>
 
+  <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
   <link rel="stylesheet" href="{{ asset('css/app.css') }}">
   <script src="{{ asset('js/app.js') }}"></script>
+  <script src="{{ asset('js/bootstrap.js') }}"></script>
+  <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ asset('js/bootstrap.bundle.js') }}"></script>
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -20,9 +24,14 @@
         <div class="image">
           <img src="{{ asset('icon/sharp_account_circle_black_18dp.png') }}" class="img-circle elevation-2" alt="User Image">
         </div>
-        <div class="info">
-          <a href="#" class="d-block">Administrator</a>
-        </div>
+          <ul class="nav nav-pills">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{ Auth::user()->name }}</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Logout</a>
+            </div>
+          </li>
+        </ul>
       </div>
     </nav>
 
@@ -31,7 +40,7 @@
     <!-- Main Sidebar Container -->
     <aside class="main-sidebar sidebar-light-primary elevation-4">
       <!-- Brand Logo -->
-      <a href="index3.html" class="brand-link">
+      <a href="/dashboard" class="brand-link">
         <img src="{{ asset('img/logo.png') }}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
         <span class="brand-text font-weight-light" style="font-size:25px">TEST CPNS</span>
       </a>
@@ -41,7 +50,7 @@
         <nav class="mt-4">
           <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
             <li class="nav-item">
-              <a href="#" class="nav-link active">
+              <a href="/dashboard" class="nav-link active">
                 <i class="nav-icon fas fa-th"></i>
                 <p>
                   <div class="image">
@@ -50,22 +59,6 @@
                   </div>
                 </p>
               </a>
-              <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
-              <!--  <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link active">
-                  <i class="fas fa-circle nav-icon"></i>
-                  <p>Active Page</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="fas fa-circle nav-icon"></i>
-                  <p>Inactive Page</p>
-                </a>
-              </li>
-            </ul> -->
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">
@@ -77,6 +70,28 @@
                   </div>
                 </p>
               </a>
+              <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+               <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="/materitiu" class="nav-link">
+                  <i class="fas fa-circle nav-icon"></i>
+                  <p>Test Intelegensi Umum</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/materitwk" class="nav-link">
+                  <i class="fas fa-circle nav-icon"></i>
+                  <p>Test Wawasan Kebangsaan</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/materitkp" class="nav-link">
+                  <i class="fas fa-circle nav-icon"></i>
+                  <p>Test Karakteristik Pribadi</p>
+                </a>
+              </li>
+            </ul>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">
@@ -101,7 +116,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">
+              <a href="/latihansoal" class="nav-link">
                 <i class="nav-icon fas fa-th"></i>
                 <p>
                   <div class="image">
@@ -110,9 +125,31 @@
                   </div>
                 </p>
               </a>
+              <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+               <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="fas fa-circle nav-icon"></i>
+                  <p>Test Intelegensi Umum</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="fas fa-circle nav-icon"></i>
+                  <p>Test Wawasan Kebangsaan</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="fas fa-circle nav-icon"></i>
+                  <p>Test Karakteristik Pribadi</p>
+                </a>
+              </li>
+            </ul>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">
+              <a href="/hasillatihan" class="nav-link">
                 <i class="nav-icon fas fa-th"></i>
                 <p>
                   <div class="image">
@@ -123,7 +160,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">
+              <a href="tryout" class="nav-link">
                 <i class="nav-icon fas fa-th"></i>
                 <p>
                   <div class="image">
@@ -132,6 +169,28 @@
                   </div>
                 </p>
               </a>
+              <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+               <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="fas fa-circle nav-icon"></i>
+                  <p>Test Intelegensi Umum</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="fas fa-circle nav-icon"></i>
+                  <p>Test Wawasan Kebangsaan</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="fas fa-circle nav-icon"></i>
+                  <p>Test Karakteristik Pribadi</p>
+                </a>
+              </li>
+            </ul>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">
@@ -169,12 +228,8 @@
 
     <!-- Main Footer -->
     <footer class="main-footer">
-      <!-- To the right -->
-      <div class="float-right d-none d-sm-inline">
-        Anything you want
-      </div>
       <!-- Default to the left -->
-      <strong>Copyright &copy; 2014-2019 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+      <strong>Copyright &copy; 2020-2021 TEST CPNS TEAM.</strong> All rights reserved.
     </footer>
   </div>
   <!-- ./wrapper -->
