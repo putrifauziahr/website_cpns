@@ -25,7 +25,7 @@
                         <div class="card-body">
                             <img src="{{ asset('icon/sharp_book_black_18dp.png') }}">
                             <div class="text-right">
-                                <h6 class="card-text" style="font-size: 30px; font-weight:bolder">100</h6>
+                                <h6 class="card-text" style="font-size: 30px; font-weight:bolder">{{$materi}}</h6>
                                 <p class="card-text">Materi</p>
                             </div>
                         </div>

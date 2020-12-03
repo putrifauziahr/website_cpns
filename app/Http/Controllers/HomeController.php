@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Materi;
 
 class HomeController extends Controller
 {
@@ -27,9 +28,22 @@ class HomeController extends Controller
     }
 
     public function dashboard(){
-        return view('dashboard.dashboard');
+        $materi = Materi::count();
+        return view('dashboard.dashboard', compact('materi'));
     }
 
+    public function materi_twk(){
+        $materi_twk = Materi::where('kategori', 'TWK')->get();
+        return view('dashboard.materi_twk', compact('materi_twk'));
+    }
+    public function materi_tiu(){
+        $materi_tiu = Materi::where('kategori', 'TIU')->get();
+        return view('dashboard.materi_tiu', compact('materi_tiu'));
+    }
+    public function materi_tkp(){
+        $materi_tkp = Materi::where('kategori', 'TKP')->get();
+        return view('dashboard.materi_tkp', compact('materi_tkp'));
+    }
     public function tryout()
     {
         return view('dashboard.tryout');
