@@ -27,6 +27,7 @@ class HomeController extends Controller
         return view('home');
     }
 
+<<<<<<< HEAD
     public function dashboard(){
         $materi = Materi::count();
         return view('dashboard.dashboard', compact('materi'));
@@ -44,6 +45,13 @@ class HomeController extends Controller
         $materi_tkp = Materi::where('kategori', 'TKP')->get();
         return view('dashboard.materi_tkp', compact('materi_tkp'));
     }
+=======
+    public function dashboard()
+    {
+        return view('dashboard.dashboard');
+    }
+
+>>>>>>> 0446c47727e847b85f62c975e6b0e560890c8751
     public function tryout()
     {
         return view('dashboard.tryout');
