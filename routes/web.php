@@ -27,4 +27,8 @@ Route::get('/latihansoal', 'HomeController@latihansoal')->name('latihansoal');
 Route::get('/materitwk', 'HomeController@materi_twk')->name('materitwk');
 Route::get('/materitiu', 'HomeController@materi_tiu')->name('materitiu');
 Route::get('/materitkp', 'HomeController@materi_tkp')->name('materitkp');
+Route::get('/detail_materitiu/{id}', 'HomeController@detail_materitiu')->name('detail_materitiu');
+Route::get('/detail_materitkp/{id}', 'HomeController@detail_materitkp')->name('detail_materitkp');
+Route::get('/detail_materitwk/{id}', 'HomeController@detail_materitwk')->name('detail_materitwk');
+
 

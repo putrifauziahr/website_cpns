@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
   <link rel="stylesheet" href="{{ asset('css/app.css') }}">
   <script src="{{ asset('js/app.js') }}"></script>
+  <script src="{{asset('js/bootstrap.min.js')}}"></script>
   <script src="{{ asset('js/bootstrap.js') }}"></script>
   <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
   <script src="{{ asset('js/bootstrap.bundle.js') }}"></script>
@@ -50,7 +51,7 @@
         <nav class="mt-4">
           <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
             <li class="nav-item">
-              <a href="/dashboard" class="nav-link active">
+              <a href="/dashboard" class="nav-link">
                 <i class="nav-icon fas fa-th"></i>
                 <p>
                   <div class="image">
@@ -72,25 +73,25 @@
               </a>
               <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-               <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="/materitiu" class="nav-link">
-                  <i class="fas fa-circle nav-icon"></i>
-                  <p>Test Intelegensi Umum</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="/materitwk" class="nav-link">
-                  <i class="fas fa-circle nav-icon"></i>
-                  <p>Test Wawasan Kebangsaan</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="/materitkp" class="nav-link">
-                  <i class="fas fa-circle nav-icon"></i>
-                  <p>Test Karakteristik Pribadi</p>
-                </a>
-              </li>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="/materitiu" class="nav-link">
+                    <i class="fas fa-circle nav-icon"></i>
+                    <p>Test Intelegensi Umum</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="/materitwk" class="nav-link">
+                    <i class="fas fa-circle nav-icon"></i>
+                    <p>Test Wawasan Kebangsaan</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="/materitkp" class="nav-link">
+                    <i class="fas fa-circle nav-icon"></i>
+                    <p>Test Karakteristik Pribadi</p>
+                  </a>
+                </li>
             </ul>
             </li>
             <li class="nav-item">
@@ -172,24 +173,6 @@
               <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="fas fa-circle nav-icon"></i>
-                  <p>Test Intelegensi Umum</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="fas fa-circle nav-icon"></i>
-                  <p>Test Wawasan Kebangsaan</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="fas fa-circle nav-icon"></i>
-                  <p>Test Karakteristik Pribadi</p>
-                </a>
-              </li>
             </ul>
             </li>
             <li class="nav-item">
@@ -197,6 +180,7 @@
                 <i class="nav-icon fas fa-th"></i>
                 <p>
                   <div class="image">
+
                     <img src="{{ asset('icon/baseline_grading_black_18dp.png') }}">
                     Hasil Try Out
                   </div>
@@ -209,23 +193,7 @@
       </div>
       <!-- /.sidebar -->
     </aside>
-
-
-
     @yield('container')
-
-
-
-    <!-- Control Sidebar -->
-    <aside class="control-sidebar control-sidebar-light">
-      <!-- Control sidebar content goes here -->
-      <div class="p-3">
-        <h5>Title</h5>
-        <p>Sidebar content</p>
-      </div>
-    </aside>
-    <!-- /.control-sidebar -->
-
     <!-- Main Footer -->
     <footer class="main-footer">
       <!-- Default to the left -->
@@ -233,9 +201,6 @@
     </footer>
   </div>
   <!-- ./wrapper -->
-
-  <!-- REQUIRED SCRIPTS -->
-  <script src="{{ asset('js/app.js') }}"></script>
 </body>
 
 </html>

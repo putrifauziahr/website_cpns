@@ -26,7 +26,7 @@
                             <div class="alert alert-primary" role="alert">
                                 Jangan khawatir dengan kesibukan Anda. Luangkan beberapa menit untuk mengerjakan soal!
                             </div>
-                            <form action="#">
+                            <!-- <form action="#">
                                 <div class="form-group col-md-4 p-1">
                                     <select id="inputState" class="form-control">
                                         <option selected>Semua Kategori</option>
@@ -35,7 +35,7 @@
                                         <option>3</option>
                                     </select>
                                 </div>
-                            </form>
+                            </form> -->
                         </div>
                     </div>
                 </div>
