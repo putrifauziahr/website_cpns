@@ -39,23 +39,8 @@
                                         <td>TWK14</td>
                                         <td>26-11-2020</td>
                                         <td>80</td>
-                                        <td></td>
+                                        <td><a href="#" class="btn btn-outline-primary">DETAIL</a></td>
                                     </tr>
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <td>TWK14</td>
-                                        <td>26-11-2020</td>
-                                        <td>80</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td>TWK14</td>
-                                        <td>26-11-2020</td>
-                                        <td>80</td>
-                                        <td></td>
-                                    </tr>
-
                                 </tbody>
                             </table>
                         </div>

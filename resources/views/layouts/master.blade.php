@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
   <link rel="stylesheet" href="{{ asset('css/app.css') }}">
   <script src="{{ asset('js/app.js') }}"></script>
-  <script src="{{asset('js/bootstrap.min.js')}}"></script>
   <script src="{{ asset('js/bootstrap.js') }}"></script>
   <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
   <script src="{{ asset('js/bootstrap.bundle.js') }}"></script>
@@ -25,7 +24,7 @@
         <div class="image">
           <img src="{{ asset('icon/sharp_account_circle_black_18dp.png') }}" class="img-circle elevation-2" alt="User Image">
         </div>
-          <ul class="nav nav-pills">
+        <ul class="nav nav-pills">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{ Auth::user()->name }}</a>
             <div class="dropdown-menu">
@@ -92,7 +91,7 @@
                     <p>Test Karakteristik Pribadi</p>
                   </a>
                 </li>
-            </ul>
+              </ul>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">
@@ -128,26 +127,26 @@
               </a>
               <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-               <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="fas fa-circle nav-icon"></i>
-                  <p>Test Intelegensi Umum</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="fas fa-circle nav-icon"></i>
-                  <p>Test Wawasan Kebangsaan</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="fas fa-circle nav-icon"></i>
-                  <p>Test Karakteristik Pribadi</p>
-                </a>
-              </li>
-            </ul>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="fas fa-circle nav-icon"></i>
+                    <p>Test Intelegensi Umum</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="fas fa-circle nav-icon"></i>
+                    <p>Test Wawasan Kebangsaan</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="fas fa-circle nav-icon"></i>
+                    <p>Test Karakteristik Pribadi</p>
+                  </a>
+                </li>
+              </ul>
             </li>
             <li class="nav-item">
               <a href="/hasillatihan" class="nav-link">
@@ -172,15 +171,32 @@
               </a>
               <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-               <ul class="nav nav-treeview">
-            </ul>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="fas fa-circle nav-icon"></i>
+                    <p>Test Intelegensi Umum</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="fas fa-circle nav-icon"></i>
+                    <p>Test Wawasan Kebangsaan</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="fas fa-circle nav-icon"></i>
+                    <p>Test Karakteristik Pribadi</p>
+                  </a>
+                </li>
+              </ul>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">
                 <i class="nav-icon fas fa-th"></i>
                 <p>
                   <div class="image">
-
                     <img src="{{ asset('icon/baseline_grading_black_18dp.png') }}">
                     Hasil Try Out
                   </div>
@@ -201,6 +217,8 @@
     </footer>
   </div>
   <!-- ./wrapper -->
+
+  @yield('chart')
 </body>
 
 </html>

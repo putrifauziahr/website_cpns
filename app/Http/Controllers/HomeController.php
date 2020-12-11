@@ -26,7 +26,7 @@ class HomeController extends Controller
     {
         return view('home');
     }
-    
+
     public function dashboard(){
         $materi = Materi::count();
         return view('dashboard.dashboard', compact('materi'));
@@ -73,6 +73,11 @@ class HomeController extends Controller
     public function hasillatihan()
     {
         return view('dashboard.hasillatihan');
+    }
+
+    public function detail_hasillatihan()
+    {
+        return view('dashboard.detail_hasillatihan');
     }
 
     public function latihansoal()
