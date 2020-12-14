@@ -34,3 +34,6 @@ Route::get('/detail_materitwk/{id}', 'HomeController@detail_materitwk')->name('d
 Route::get('/latihansoal', 'HomeController@latihansoal');
 Route::get('/pembukaan-soal', 'SoalController@index');
 Route::get('/soal', 'SoalController@tampilan_soal');
+
+Route::get('/hasiltryout', 'HomeController@hasiltryout');
+Route::get('/statistik_tryout', 'HomeController@statistik_tryout');

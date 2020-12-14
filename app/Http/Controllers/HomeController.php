@@ -84,4 +84,12 @@ class HomeController extends Controller
     {
         return view('dashboard.latihansoal');
     }
+    public function hasiltryout()
+    {
+        return view('dashboard.hasiltryout');
+    }
+    public function statistik_tryout()
+    {
+        return view('dashboard.statistik_tryout');
+    }
 }
